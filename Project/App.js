@@ -61,7 +61,8 @@ const App: () => Node = () => {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <Text style={styles.sectionContainer} >Hello world</Text>
+      {/* <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
@@ -85,15 +86,17 @@ const App: () => Node = () => {
           </Section>
           <LearnMoreLinks />
         </View>
-      </ScrollView>
+      </ScrollView> */}
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+    // marginTop: 32,
+    // paddingHorizontal: 24,
+    textAlign: 'center',
+    backgroundColor: 'purple',
   },
   sectionTitle: {
     fontSize: 24,
